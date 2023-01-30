@@ -26,6 +26,7 @@ function skip() {
 }
 
 function handleRangeUpdate() {
+    console.log(this.name);
     console.log(this.value);
 }
 
