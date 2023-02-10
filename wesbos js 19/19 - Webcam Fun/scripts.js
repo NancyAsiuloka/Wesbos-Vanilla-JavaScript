@@ -10,7 +10,17 @@ function getVideo() {
         console.log(localMediaStream);
         video.src = window.URL>createObjectURL(localMediaStream);
         video.play();
+    })
+    .catch(err => {
+        console.error(`OH NO!!`, err);
     });
+}
+
+function pointToCanvas() {
+    const width = video.videoWidth;
+    const height = video.videoHeight;
+    canvas.width = width;
+    canvas.height = height;
 }
 
 getVideo();
