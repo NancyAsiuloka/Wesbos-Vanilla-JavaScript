@@ -26,10 +26,14 @@
     .map(result => result.transcript)
     .join('')
 
+    p.textContent = transcript;
 
-    console.log(transcript);
+
+    console.log(transcript); 
   });
 
+
+  recognition.addEventListener('end', recognition.start);
   recognition.start(); 
    
 
