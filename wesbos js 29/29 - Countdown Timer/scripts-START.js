@@ -8,6 +8,7 @@ function timer(seconds) {
         const secondsLeft = Math.round((then - Date.now()) / 1000);
         // check if we should stop it
         if(secondsLeft <= 0) {
+            clearInterval(countdown);
             return;
         }
         // display it
