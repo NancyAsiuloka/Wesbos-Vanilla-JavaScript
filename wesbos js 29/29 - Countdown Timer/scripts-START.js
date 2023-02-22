@@ -12,6 +12,10 @@ function timer(seconds) {
             return;
         }
         // display it
-        console.log(secondsLeft); 
+        displayTimeLeft(secondsLeft); 
     }, 1000);
+}
+
+function displayTimeLeft(seconds) {
+    console.log(seconds)
 }
