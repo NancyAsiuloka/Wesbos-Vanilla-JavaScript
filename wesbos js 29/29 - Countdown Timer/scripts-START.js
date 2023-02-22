@@ -22,6 +22,6 @@ function timer(seconds) {
 function displayTimeLeft(seconds) {
     const minutes = Math.floor(seconds / 60);
     const reminderSeconds = seconds % 60;
-    const display = `11:11`;
+    const display = `${minutes}:${reminderSeconds}`;
     console.log({minutes, reminderSeconds});
 }
