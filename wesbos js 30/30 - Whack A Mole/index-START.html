@@ -43,7 +43,9 @@
   }
 
   function randomHole(holes) {
-    console.log(holes.length);
+    const idx = Math.floor(Math.random() * holes.length);
+    const hole = holes[idx];
+    console.log(hole);
   }
 
 </script>
